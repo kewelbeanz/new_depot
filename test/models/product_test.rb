@@ -27,7 +27,7 @@ class ProductTest < ActiveSupport::TestCase
   end
   
   def new_product(image_url)
-    Product.new(title: "My Book Title"), description: "yyy", price: 1, image_url: image_url)
+    Product.new(title: "My Book Title", description: "yyy", price: 1, image_url: image_url)
   end
   test "image url" do
     ok = %w{ fred.gif fred.jpg fred.png FRED.JPG FRED.Jpg http://a.b.c/x/y/z/fred.gif }
@@ -48,10 +48,5 @@ class ProductTest < ActiveSupport::TestCase
     product = Product.new(title: products(:ruby).title, description: "yyy", price: 1, image_url: "fred.gif")
     assert product.invalid?
     assert_equal [I18n.translate('errors.messages.taken')], product.errors[:title]
-    
-    
-    
-    
-  
-
+  end  
 end
