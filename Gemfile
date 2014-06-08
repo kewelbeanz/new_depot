@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-<<<<<<< HEAD
+#<<<<<<< HEAD
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.0'
@@ -37,29 +37,30 @@ gem 'spring',        group: :development
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-=======
-gem 'rails', '3.2.3'
+# Possibly due to autodeployment issues after Task H2, lines like following appeared
+#=======
+# gem 'rails', '3.2.3'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+# gem 'sqlite3'  #extra sqlite3 from somewhere
 gem 'prototype-rails', :git => 'git://github.com/rails/prototype-rails.git'
 
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
+  # gem 'sass-rails',   '~> 4.0.3'
+  # gem 'coffee-rails', '~> 4.0.0'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platform => :ruby
 
-  gem 'uglifier', '>= 1.0.3'
+  # gem 'uglifier', '>= 1.3.0' # extra one uncomment this and comment other if issues
 end
 
-gem 'jquery-rails'
+# gem 'jquery-rails' #extra
 gem 'will_paginate', '>= 3.0.pre'
 
 # To use ActiveModel has_secure_password
@@ -67,22 +68,22 @@ gem 'will_paginate', '>= 3.0.pre'
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
->>>>>>> 0924e6b2a4d911eb469e16ffd3328e7eb41eebf8
+#>>>>>>> 0924e6b2a4d911eb469e16ffd3328e7eb41eebf8
 
 # Use unicorn as the app server
 # gem 'unicorn'
 
-<<<<<<< HEAD
+#<<<<<<< HEAD
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-=======
+#=======
 # Deploy with Capistrano
 # gem 'capistrano'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
->>>>>>> 0924e6b2a4d911eb469e16ffd3328e7eb41eebf8
+#>>>>>>> 0924e6b2a4d911eb469e16ffd3328e7eb41eebf8
