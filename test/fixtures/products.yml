@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+=======
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+>>>>>>> 0924e6b2a4d911eb469e16ffd3328e7eb41eebf8
 
 one:
   title: MyString
@@ -11,6 +15,7 @@ two:
   description: MyText
   image_url: MyString
   price: 9.99
+<<<<<<< HEAD
 
 ruby:
   title: Programming Ruby 1.9
@@ -21,3 +26,11 @@ ruby:
   
     
     
+=======
+  
+ruby:
+  title: Programming Ruby 1.9
+  description: Ruby is the fastest growing and most exciting and dynamic language out there.
+  price: 49.50
+  image_url: ruby.png
+>>>>>>> 0924e6b2a4d911eb469e16ffd3328e7eb41eebf8

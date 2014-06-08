@@ -4,8 +4,13 @@
       <h2><%= pluralize(@cart.errors.count, "error") %> prohibited this cart from being saved:</h2>
 
       <ul>
+<<<<<<< HEAD
       <% @cart.errors.full_messages.each do |message| %>
         <li><%= message %></li>
+=======
+      <% @cart.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+>>>>>>> 0924e6b2a4d911eb469e16ffd3328e7eb41eebf8
       <% end %>
       </ul>
     </div>

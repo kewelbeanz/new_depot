@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
@@ -7,3 +8,14 @@ one:
 two:
   product: ruby 
   cart: one 
+=======
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  product: ruby
+  cart: one
+
+two:
+  product: ruby
+  cart: one
+>>>>>>> 0924e6b2a4d911eb469e16ffd3328e7eb41eebf8

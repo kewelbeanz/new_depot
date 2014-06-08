@@ -1,6 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+<<<<<<< HEAD
   <strong>Product:</strong>
   <%= @line_item.product %>
 </p>
@@ -10,5 +11,17 @@
   <%= @line_item.cart %>
 </p>
 
+=======
+  <b>Product:</b>
+  <%= @line_item.product_id %>
+</p>
+
+<p>
+  <b>Cart:</b>
+  <%= @line_item.cart_id %>
+</p>
+
+
+>>>>>>> 0924e6b2a4d911eb469e16ffd3328e7eb41eebf8
 <%= link_to 'Edit', edit_line_item_path(@line_item) %> |
 <%= link_to 'Back', line_items_path %>

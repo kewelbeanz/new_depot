@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 $('#notice').hide();
 
 if ($('#cart tr').length == 1) { $('#cart').show('blind', 1000); }
@@ -5,3 +6,6 @@ if ($('#cart tr').length == 1) { $('#cart').show('blind', 1000); }
 $('#cart').html("<%= escape_javascript render(@cart) %>");
 
 $('#current_item').css({'background-color':'#88ff87'}).animate({'background-color':'#114410'}, 1000);
+=======
+$("#cart").show("slow").html("<%= escape_javascript (render(@cart)) %>");
+>>>>>>> 0924e6b2a4d911eb469e16ffd3328e7eb41eebf8

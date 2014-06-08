@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
   name: Dave Thomas
   address: MyText
+=======
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: Dave Thomas
+  address: myText
+>>>>>>> 0924e6b2a4d911eb469e16ffd3328e7eb41eebf8
   email: dave@example.org
   pay_type: Check
 

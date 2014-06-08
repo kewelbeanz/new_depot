@@ -4,14 +4,20 @@
       <h2><%= pluralize(@order.errors.count, "error") %> prohibited this order from being saved:</h2>
 
       <ul>
+<<<<<<< HEAD
       <% @order.errors.full_messages.each do |message| %>
         <li><%= message %></li>
+=======
+      <% @order.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+>>>>>>> 0924e6b2a4d911eb469e16ffd3328e7eb41eebf8
       <% end %>
       </ul>
     </div>
   <% end %>
 
   <div class="field">
+<<<<<<< HEAD
     <%= f.label :name %><br>
     <%= f.text_field :name, size: 40 %>
   </div>
@@ -27,6 +33,22 @@
     <%= f.label :pay_type %><br>
     <%= f.select :pay_type, Order::PAYMENT_TYPES, 
 prompt: 'Select a payment method' %>
+=======
+    <%= f.label :name %><br />
+    <%= f.text_field :name, :size => 40 %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br />
+    <%= f.text_area :address, :rows => 3, :cols => 40 %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email, :size => 40 %>
+  </div>
+  <div class="field">
+    <%= f.label :pay_type %><br />
+    <%= f.select :pay_type, Order::PAYMENT_TYPES, :prompt => "Select a payment method.." %>
+>>>>>>> 0924e6b2a4d911eb469e16ffd3328e7eb41eebf8
   </div>
   <div class="actions">
     <%= f.submit 'Place Order' %>

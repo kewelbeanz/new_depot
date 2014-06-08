@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<<<<<<< HEAD
   <title>Pragprog Books Online StoreDepot</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -32,5 +33,43 @@
       <%= yield %>
     </div>
   </div>
+=======
+  <title>Pragprog Books Online Store |</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body id="store">
+	<div id="banner">
+		<%= image_tag("logo.png") %>
+		<%= @page_title || "Pragmatic Bookshelf" %>
+	</div>
+	<div id="columns">
+		<div id="side">
+			<% if @cart %>
+			<%= hidden_div_if(@cart.line_items.empty?, :id => "cart") do %>
+				<%= render @cart %>
+			<% end %>
+			<% end %>
+			<a href="http://www...">Home</a><br />
+			<a href="http://www...">Questions</a><br />
+			<a href="http://www...">News</a><br />
+			<a href="http://www...">Contact</a><br />
+			<p style="color:white;"><%= Time.now.month %>/<%= Time.now.day %>/<%= Time.now.year %></p>
+			
+			<% if session[:user_id] %>
+				<br />
+				<%= link_to "Orders", orders_path %><br />
+				<%= link_to "Products", products_path %><br />
+				<%= link_to "Users", users_path %><br />
+				<br />
+				<%= button_to "Logout", logout_path, :method => :delete %>
+				<% end %>
+		</div>
+		<div id="main">
+			<%= yield %>
+		</div>
+	</div>
+>>>>>>> 0924e6b2a4d911eb469e16ffd3328e7eb41eebf8
 </body>
 </html>
