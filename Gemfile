@@ -14,11 +14,11 @@ group :production do
   gem 'rails_12factor'
 end
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.3'
+#gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
+#gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.0.0'
+#gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
 
@@ -45,19 +45,19 @@ gem 'spring',        group: :development
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 # gem 'sqlite3'  #extra sqlite3 from somewhere
-gem 'prototype-rails', :git => 'git://github.com/rails/prototype-rails.git'
+# gem 'prototype-rails', :git => 'git://github.com/rails/prototype-rails.git' #is this problem?
 
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  # gem 'sass-rails',   '~> 4.0.3'
-  # gem 'coffee-rails', '~> 4.0.0'
+   gem 'sass-rails',   '~> 4.0.3'
+   gem 'coffee-rails', '~> 4.0.0'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platform => :ruby
 
-  # gem 'uglifier', '>= 1.3.0' # extra one uncomment this and comment other if issues
+   gem 'uglifier', '>= 1.3.0' # extra one uncomment this and comment other if issues
 end
 
 # gem 'jquery-rails' #extra
