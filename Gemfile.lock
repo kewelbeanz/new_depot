@@ -5,7 +5,7 @@ GEM
       actionpack (= 4.1.0)
       actionview (= 4.1.0)
       mail (~> 2.5.4)
-    actionpack (>=4.2.5.1)
+    actionpack (>= 5.2.4.6)
       actionview (= 4.1.0)
       activesupport (= 4.1.0)
       rack (~> 1.5.2)
